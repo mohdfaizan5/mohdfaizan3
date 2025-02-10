@@ -1,4 +1,4 @@
-nav{
+nav {
   border-bottom: 1px solid rgba(128, 128, 128, 0.47);
   /* height: 65px; */
   font-size: 32px;
@@ -8,22 +8,24 @@ nav{
   align-items: center;
   padding: 12px 40px;
   height: 50px;
-  
-  position: fixed; /*From here on nav fixed*/
+
+  position: fixed;
+  /*From here on nav fixed*/
   top: 0;
   right: 0;
   left: 0;
   background-color: black;
   z-index: 100;
   transition: all .5s linear;
+  cursor: pointer;
 }
 
-nav .left{
+nav .left {
   font-size: 32px;
   font-weight: 700;
 }
 
-nav .right a{
+nav .right a {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -32,48 +34,112 @@ nav .right a{
   padding: 10px 12px;
 }
 
-nav .right a:hover{
+nav .right a:hover {
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 3px;
 }
 
-nav span{
+nav span {
   color: rgb(143, 144, 148);
 }
 
-nav div button{
+nav div button {
   background-color: black;
   color: white;
   border: none;
   font-size: 18px;
 }
-nav .right-mobile{
+
+nav .right-mobile {
   display: none;
 }
 
+
+.mobileNav {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  gap: 30px;
+  transition: transform .7s linear;
+  position: fixed;
+  box-shadow: 2px 5px 20px rgba(128, 128, 128, 0.27);
+  z-index: 100;
+  /* border: 1px solid red; */
+  top: 75px;
+  left: 2px;
+
+
+}
+
+.mobileNav a {
+  color: white;
+  font-size: 6vw;
+  /* text-decoration: none; */
+}
+
+
+.hideNav {
+  transition: transform .7s linear;
+  transform: translateX(-110%);
+}
+
+
+
 /* Footer */
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   margin: 40px 0px;
   justify-content: center;
   align-items: center;
-  margin-top: 500px;
+  margin-top: 100px;
 }
 
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section h1 {
+  font-size: 8vw;
+  max-height: 50px;
+}
+footer section p {
+  text-align: center;
+  padding: 0px 8px;
+}
+
+footer section span{
+  color: rgb(60, 207, 145);
+}
+
+footer .socailBtns a{
+  text-decoration: none;
+  color: white;
+}
+
+
 @media (max-width: 425px) {
-  nav .right-mobile{
+  nav .right-mobile {
     display: block;
   }
-  nav .right-mobile i{
-    
-    width: 10px; 
+
+  nav .right-mobile i {
+
+    width: 10px;
     font-weight: 600;
-    
+
   }
 
-  nav .right{
+  nav .right {
     display: none;
   }
 }

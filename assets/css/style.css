@@ -8,6 +8,7 @@ body {
   font-family: 'Inter';
   padding: 0px;
   margin: 0px;
+  position: relative;
 }
 
 
@@ -64,6 +65,8 @@ main {
   z-index: -1;
 }
 
+
+
 /* Current learning */
 .current_learning {
   font-size: 20px;
@@ -112,6 +115,7 @@ main {
   grid-template-columns: 500px 500px;
   column-gap: 20px;
   row-gap: 30px;
+  row-gap: 30px;
 }
 
 .project_container {
@@ -121,14 +125,14 @@ main {
   background-color: rgb(8, 8, 8);
   border: 1px solid rgb(17, 17, 17);
   border-radius: 10px;
-
+  box-shadow: 0px 0px 30px rgba(249, 249, 249, 0.1);
 
 }
 
 .projects_section div img {
   width: 100%;
   height: 60%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -136,15 +140,34 @@ main {
 }
 
 
+
+.project_container .project_description button {
+  background-color: #13171e;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: none;
+  color: aliceblue;
+  font-weight: 500;
+}
+
 .project_description {
   padding: 8px 16px;
   height: 35%;
   width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
+  /* justify-content: space-between; */
 
 }
+
+.project_description div:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.project_description .project_technologies {}
+
 
 /* 
 
@@ -167,7 +190,29 @@ main {
 }
  */
 
+/* Loading animation */
+.loader_wrapper {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  z-index: 200;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+}
 
+.loader {
+  font-size: 12vh;
+}
+
+.loader span {
+  font-size: 13vh;
+  color: rgb(143, 144, 148);
+}
 
 /* responsive design */
 
@@ -180,13 +225,21 @@ main {
 
   .hey {
     font-size: 28px;
+    
   }
-
+  
   .bigName {
     font-size: 56px;
     line-height: 56px;
+    margin-bottom: 45px;
+  }
+
+  .short-description{
     margin-bottom: 40px;
-    margin-bottom: 40px;
+  }
+
+  .about_me--container{
+    margin-top: 40px;
   }
 
   main {
@@ -203,6 +256,7 @@ main {
 
   .project_container {
     height: 390px;
+
   }
 
   .projects_section div img {
@@ -246,4 +300,8 @@ main {
     font-size: 14px;
   }
 
+  /* loading animation little top */
+  .loader_wrapper {
+    top: -10%;
+  }
 }

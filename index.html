@@ -2,10 +2,39 @@
 <html lang="en">
 
 <head>
+
+  <!-- Meta data encoding -->
   <meta charset="UTF-8">
+
+  <!-- Meta Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Faizan</title>
+
+  <!-- Meta edge -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO -->
+  <meta name="description"
+    content="This is a portfolio website of Web Developer Mohd faizan from bangalore, India. Here I share my projects, client testimonials, my startups I'm working">
+
+  <!-- Title  -->
+  <title>Mohammed Faizan - WebDeveloper portfolio</title>
+
+
+  <!-- other meta keywords -->
+  <meta name="keywords"
+    content="Website Developer, Mohammed Faizan, Mohd Faizan.me, mohdfaizan.me, mohdfaizan web developer, Startup Mohammed Faizan, Faizan from bangalore, mohdfaizan projects, mohdfaizan founder, mohdfaizan unicorn space founder and ceo, ">
+
+  <!-- Meta Author -->
+  <meta name="author" content="Mohd Faizan">
+
+  <!-- Favicon -->
   <link rel="shortcut icon" href="assets/favicons/android-chrome-192x192.png" type="image/png">
+  <link rel="shortcut icon" href="assets/favicons/favicon-32x32.png" type="image/png">
+
+
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/header_footer.css">
   <link rel="stylesheet" href="assets/css/aboutme.css">
@@ -15,21 +44,34 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Gsap  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
+  <section class="loader_wrapper">
+    <div class="loader">
+      <span>{</span>F<span>}</span>
+    </div>
+  </section>
   <header>
-
     <nav>
       <div class="left">
         <span>{</span>F<span>}</span>
       </div>
       <div class="right">
-        <a href="">
+        <a href="#" title="homepage">
           Home
         </a>
         <!-- <button>Home</button> -->
-        <a href="#projects">
+        <a href="#projects" title="projects section">
           Projects
         </a>
       </div>
@@ -37,16 +79,33 @@
         <i class="fa-solid fa-bars"></i>
       </div>
 
+
     </nav>
+    <section class="mobileNav hideNav">
+
+      <a href="#" title="homepage">
+        Home
+      </a>
+      <a href="#projects" title="projects section">
+        Projects
+      </a>
+      <a href="#contact" title="contact section">
+        Contact Us
+      </a>
+    </section>
   </header>
+
+
+
   <main>
     <div class="nameContainer">
 
-      <img src="assets/icons/dotted_svg.svg" alt="">
+      <img src="assets/icons/dotted_svg.svg" alt="dotted svg">
       <p class="hey">Hey there!, I'm</p>
       <h2 class="bigName">Mohammed Faizan.</h2>
     </div>
-    <p class="short-description">Technology | Entrepreneurship <span><br>Helping Startup founders and Business owners leverage Technology.</span></p>
+    <p class="short-description">Technology | Entrepreneurship <span><br>Helping Startup founders and Business owners
+        leverage Technology.</span></p>
     <!-- <p class="short-description">Technology | Entrepreneurship <span><br>A self-taught developer with an interest in <br> Computer Science.</span></p> -->
 
     <p class="current_learning">
@@ -54,7 +113,7 @@
       💻 Currently specializing in <span class="highlighted_text">Front-end Development.</span></p>
 
     <div class="socailBtns">
-      <a href="https://www.linkedin.com/in/mohdfaizan5/">
+      <a href="https://www.linkedin.com/in/mohdfaizan5/" title="Linkedin mohdfaizan">
 
         <button>
           <i class="fa-brands fa-linkedin" style="color: #3ccf91;"></i>
@@ -62,7 +121,7 @@
         </button>
       </a>
 
-      <a href="https://github.com/mohdfaizan5">
+      <a href="https://github.com/mohdfaizan5" title="github mohdfaizan5">
 
         <button>
           <i class="fa-brands fa-github" style="color: #3ccf91;"></i>
@@ -70,7 +129,7 @@
         </button>
       </a>
 
-      <a href="mailto:mohdfaizan13123@gmail.com">
+      <a href="mailto:mohdfaizan13123@gmail.com" title="mail mohdfaizan">
 
         <button>
           <i class="fa-solid fa-envelope" style="color: #3ccf91;"></i>
@@ -115,7 +174,7 @@
 
       </div>
       <div class="right">
-        <img src="assets/profile-pic (6).png" alt="">
+        <!-- <img src="assets/imgs/profile_pic.png" alt="mohdfaizan profile picture"> -->
       </div>
 
     </section>
@@ -123,20 +182,121 @@
     <h2 id="projects">🔥 Projects</h2>
 
     <section class="projects_section">
+
       <div class="project_container">
-        <img src="assets/imgs/project1.PNG" alt="">
+        <img src="assets/imgs/natasha.png" alt="mohdfaizan web project 1">
+
         <div class="project_description">
           <div>
             Natasha.ai
           </div>
           <div class="project_technologies">
-            <button>HTML</button>
-            <button>HTML</button>
-            <button>HTML</button>
+            <button>OpenAi</button>
+            <button>JS</button>
+            <button>UI</button>
           </div>
           <div>
             Natasha is a personalized AI assistant which helps you in your daily works and helps you to be productive
             and makes sure your on your way to your success.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- EDUHUB -->
+      <div class="project_container" id="project1">
+        <img style="object-fit: cover;" src="assets/imgs/eduhub.png" alt="mohdfaizan web project 1">
+        <div class="project_description">
+          <div>
+            Eduhub
+          </div>
+          <div class="project_technologies">
+            <button>OpenAi</button>
+            <button>JS</button>
+            <button>UI</button>
+          </div>
+          <div>
+            Eduhub is a education CRM system for schools and universities, Its an all in one dashboard for your
+            academics needs from attendence to results.
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Practical UI -->
+      <div class="project_container">
+        <img src="assets/imgs/practicalUI.jpg" alt="Practicat UI landing page mohdfaizan web project 1">
+        <div class="project_description">
+          <div>
+            Practical UI
+          </div>
+          <div class="project_technologies">
+            <button>HTML, CSS, JS</button>
+            <button>UX & UI</button>
+            <button>Animations</button>
+          </div>
+          <div>
+            Practical UI is a website that gives you best UI & UX lessons and what needs to apply for your applications
+            and websites that can increase your leads and boost your sales.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pink Social landing page -->
+      <div class="project_container">
+        <img src="assets/imgs/socialLandingpage.jpg" alt="Pink Socail landing page,mohdfaizan web project 1">
+        <div class="project_description">
+          <div>
+            MLab
+          </div>
+          <div class="project_technologies">
+            <button>HTML, Node.js</button>
+            <button>Tailwind</button>
+            <button>Animataion</button>
+          </div>
+          <div>
+            MLab is a socail media dashboard for remobes the hastle of managing all your socail handle at one space
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Productivity++ -->
+      <div class="project_container">
+        <img src="assets/imgs/productivity.jpg" alt="Productivity landing page, mohdfaizan web project 1">
+        <div class="project_description">
+          <div>
+            Productivity++
+          </div>
+          <div class="project_technologies">
+            <button>OpenAi</button>
+            <button>JS</button>
+            <button>UI</button>
+          </div>
+          <div>
+            Productivity++ is the only tool you need for managing your daily life and self improvement tracker. In this
+            world of distraction this is the buddy you're look for..
+          </div>
+        </div>
+
+      </div>
+
+      <!-- UNICORN SPACE -->
+      <div class="project_container">
+        <img src="assets/imgs/unicornSpace.jpg" alt="Unicorn Space agency landing page">
+        <div class="project_description">
+          <div>
+            Unicorn Space
+          </div>
+          <div class="project_technologies">
+            <button>Tailwind</button>
+            <button>UX & Animation</button>
+            <button>JS</button>
+          </div>
+          <div>
+            Unicorn Space is digital agency to take your idea to product and your product to profits.
           </div>
         </div>
 
@@ -164,7 +324,7 @@
 
       <!-- 
       <div class="project_div">
-        <img src="assets/imgs/project1.PNG" alt="">
+        <img src="assets/imgs/project1.png" alt="">
         
         <div class="project_description">
           <div class="project_name">
@@ -184,7 +344,7 @@
       </div>
 
       <div class="project_div">
-        <img src="assets/imgs/project1.PNG" alt="">
+        <img src="assets/imgs/project1.png" alt="">
         
         <div class="project_description">
           <div class="project_name">
@@ -204,7 +364,7 @@
       </div>
       
       <div>
-        <img src="assets/imgs/project2.PNG" alt="">
+        <img src="assets/imgs/project2.png" alt="">
         <section class="project_name">
           EduHub
         </section>
@@ -220,7 +380,7 @@
 
 
       <div>
-        <img src="assets/imgs/yt download cli.PNG" alt="">
+        <img src="assets/imgs/yt download cli.png" alt="">
         <section class="project_name">
           Youtube Video Downloader (CLI)
         </section>
@@ -234,7 +394,7 @@
 
 
       <div>
-        <img src="assets/imgs/project1.PNG" alt="">
+        <img src="assets/imgs/project1.png" alt="">
         <section class="project_name">
           Natasha.ai
         </section>
@@ -249,16 +409,32 @@
       </div> -->
     </section>
   </main>
+
+
 </body>
 <footer>
+  <section id="contact">
+    <h1>Keep In Touch</h1>
+    <p>
+      I'm currently specializing in <span>Front-end Development</span>.
+      Feel free to get in touch and talk more about your projects.
+    </p>
+  </section>
   <div class="socailBtns">
     <button>
-      <i class="fa-brands fa-linkedin" style="color: #3ccf91;"></i>
-      LinkedIn</button>
+      <a href="https://www.linkedin.com/in/mohdfaizan5/" title="mohdfaizan5">
+
+        <i class="fa-brands fa-linkedin" style="color: #3ccf91;"></i>
+        LinkedIn
+      </a>
+    </button>
 
     <button>
-      <i class="fa-brands fa-github" style="color: #3ccf91;"></i>
-      Github
+      <a href="https://www.github.com/mohdfaizan5" title="github mohdfaizan5">
+
+        <i class="fa-brands fa-github" style="color: #3ccf91;"></i>
+        Github
+      </a>
     </button>
 
     <button>
@@ -266,7 +442,10 @@
       <!-- <i class="fa-solid fa-envelope" style="color: #3ccf91;"></i>   -->
       Resume</button>
   </div>
-  Designed and Developed by Mohammed Faizan.
+
+  <p>
+    Designed and Developed by Mohammed Faizan.
+  </p>
 </footer>
 
 </html>
